@@ -17,7 +17,7 @@ let customFonts = {
   "Bubblegum-Sans": require("../assets/fonts/BubblegumSans-Regular.ttf")
 };
 
-export default class StoryCard extends Component {
+export default class PostCard extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -9,7 +9,7 @@ import {
   Image
 } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
-import StoryCard from "./StoryCard";
+import PostCard from "./PostCard";
 
 import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
@@ -38,8 +38,8 @@ export default class Feed extends Component {
     this._loadFontsAsync();
   }
 
-  renderItem = ({ item: story }) => {
-    return <StoryCard story={story} />;
+  renderItem = ({ item: post }) => {
+    return <PostCard post={post} />;
   };
 
   keyExtractor = (item, index) => index.toString();
